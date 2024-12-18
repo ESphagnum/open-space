@@ -1,0 +1,17 @@
+- type: roleLoadout
+  id: JobRoboticist
+  groups:
+  - RoboticistHead
+  - RoboticistJumpsuit
+  - RoboticistOuterClothing
+  - RoboticistBackpack
+  - ScientistShoes
+  - Survival
+  - Trinkets
+  
+- type: roleLoadout
+  id: JobMagistrate
+  groups:
+  - CommonBackpack
+  - Survival
+  - Trinkets
