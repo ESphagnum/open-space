@@ -1,17 +1,20 @@
 - type: job
   id: BlueShield
-  name: Officer "Blue Shield"
-  description: Your primary job is to protect the heads. Remember, you are not a security officer.
+  name: job-name-blueshield
+  description: job-description-blueshield
   playTimeTracker: JobBlueShield
   requirements:
     - !type:DepartmentTimeRequirement
       department: Security
-      time: 62000 # 20 hrs
+      time: 72000 # 20 hrs
     - !type:DepartmentTimeRequirement
       department: Command
-      time: 62000 # 20 hrs
+      time: 72000 # 20 hrs
+    - !type:RolesRequirement
+      proto: ExtRolesReq
   startingGear: BlueShieldGear
   icon: JobIconBlueShield
+  rules: job-rules-corporate-aligned
   supervisors: job-supervisors-centcom
   canBeAntag: false
   access:
@@ -28,14 +31,22 @@
     - Chemistry
     - Engineering
     - Research
+    - Robotics
     - Detective
     - Salvage
     - Security
+    - Brigmedic
     - Brig
+    - Lawyer
     - Cargo
     - Atmospherics
     - Cargo
     - Medical
+    - BlueShield
+    - Surgery
+    - Paramedic
+    - Mining
+    - SalvageLead
   special:
     - !type:AddImplantSpecial
       implants: [MindShieldImplant]
@@ -43,20 +54,17 @@
 - type: startingGear
   id: BlueShieldGear
   equipment:
-    shoes: ClothingShoesBootsCombatFilled
-    eyes: ClothingEyesGlassesBlueShield
-    head: ClothingHeadHatBeretBlueShield
-    id: BlueShieldPDA
-    ears: ClothingHeadsetAltCommand
-    belt: ClothingBeltBlueShieldWebbingFilled
+    # head: ClothingHeadHatBeretBlueShield
+    # id: BlueShieldPDA
+    ears: ClothingHeadsetAltBSO # Starlight
+    # belt: ClothingBeltBlueShieldWebbingFilled
     gloves: ClothingHandsGlovesCombat
+    pocket1: WeaponMultiphaseGun
+    pocket2: HandheldBSOCrewMonitor
   storage:
     back:
-    - BoxSurvivalSecurity
     - Flash
-    pocket2:
-    - Handcuffs
-
+    - ClothingMaskGasBSO
 
 - type: chameleonOutfit
   id: BlueShieldChameleonOutfit

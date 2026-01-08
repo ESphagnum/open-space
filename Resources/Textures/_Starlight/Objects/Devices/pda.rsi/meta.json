@@ -1,12 +1,15 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from ParadiseStation",
+  "copyright": "Taken from ParadiseStation | Salvage/Mining PDAs by mikeysaurus, Veteran Salvage/Mining PDAs by PeterPoley for Starlight | Senior Chemist/Corpsman+Vet Corpsman PDA by wonderfulnewworld (github) for Starlight | Paramedic and Senior Paramedic by TacoLlama (github) | BlueShield/Veteran Blueshield PDA by SapphicHaymaker",
   "size": {
     "x": 32,
     "y": 32
   },
   "states": [
+    {
+      "name": "pda"
+    },
     {
       "name": "id_overlay"
     },
@@ -33,7 +36,108 @@
       "directions": 4
     },
     {
-      "name": "pda-blueshield"
+      "name": "pda-blueshield",
+      "delays": [
+            [
+            0.3,
+            0.3,
+            0.3,
+            0.3
+            ]
+        ]
+    },
+    {
+      "name": "pda-veteranblueshield",
+      "delays": [
+            [
+            0.3,
+            0.3,
+            0.3,
+            0.3
+            ]
+        ]
+    },
+    {
+      "name": "pda-mining"
+    },
+    {
+      "name": "pda-mailtech"
+    },
+    {
+      "name": "pda-ntnc-cs"
+    },
+    {
+      "name": "pda-commander"
+    },
+    {
+      "name": "pda-salvagelead"
+    },
+    {
+      "name": "pda-veteransalvagelead"
+    },
+    {
+      "name": "pda-veteransalvage"
+    },
+    {
+      "name": "pda-veteranmining"
+    },
+    {
+      "name": "pda-paramedic",
+      "delays": [
+            [
+            0.3,
+            0.3,
+            0.3,
+            0.3
+            ]
+        ]
+    },
+    {
+      "name": "pda-seniorparamedic",
+      "delays": [
+            [
+            0.3,
+            0.3,
+            0.3,
+            0.3
+            ]
+        ]
+    },
+	  {
+      "name": "pda-seniorchemist"
+    },
+    {
+      "name": "pda-veteranbrigmedic",
+	    "delays": [
+            [
+            0.3,
+            0.3,
+            0.3,
+            0.3
+            ]
+        ]
+    },
+	{
+      "name": "pda-corpsman",
+	  "delays": [
+            [
+            0.3,
+            0.3,
+            0.3,
+            0.3
+            ]
+        ]
+    },
+	{
+      "name": "pda-veterancorpsman",
+	  "delays": [
+            [
+            0.3,
+            0.3,
+            0.3,
+            0.3
+            ]
+        ]
     }
   ]
 }
