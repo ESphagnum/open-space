@@ -12,15 +12,14 @@ public sealed class SetLobbyMusicCommand : EntitySystem, IConsoleCommand
     [Dependency] private readonly IConfigurationManager _cfg = default!;
 
     public string Command => "setlobbymusic";
-    public string Description => "Меняет коллекцию музыки в лобби (один раз за раунд).";
-    public string Help => "Использование: setlobbymusic <название_коллекции>";
+    public string Description => Loc.GetString("set-lobby-music-command-description");
+    public string Help => Loc.GetString("set-lobby-music-command-help");
 
     private static bool _alreadyUsed;
 
     public override void Initialize()
     {
         base.Initialize();
-        // Подписываемся на очистку раунда для сброса флага
         SubscribeLocalEvent<RoundRestartCleanupEvent>(OnRoundRestart);
     }
 
@@ -33,13 +32,13 @@ public sealed class SetLobbyMusicCommand : EntitySystem, IConsoleCommand
     {
         if (_alreadyUsed)
         {
-            shell.WriteError("Эту команду можно использовать только один раз за раунд!");
+            shell.WriteError(Loc.GetString("set-lobby-music-command-already-used"));
             return;
         }
 
         if (args.Length != 1)
         {
-            shell.WriteError("Укажите ровно один аргумент: название коллекции.");
+            shell.WriteError(Loc.GetString("set-lobby-music-command-invalid-args"));
             return;
         }
 
@@ -48,14 +47,13 @@ public sealed class SetLobbyMusicCommand : EntitySystem, IConsoleCommand
 
         if (current == newCollection)
         {
-            shell.WriteError("Эта коллекция уже установлена.");
+            shell.WriteError(Loc.GetString("set-lobby-music-command-already-set", ("collection", newCollection)));
             return;
         }
 
-        // Применяем изменение
         _cfg.SetCVar(CCVars.LobbyMusicCollection, newCollection);
         _alreadyUsed = true;
 
-        shell.WriteLine($"Коллекция музыки изменена на '{newCollection}'. Повторное использование заблокировано до нового раунда.");
+        shell.WriteLine(Loc.GetString("set-lobby-music-command-success", ("collection", newCollection)));
     }
 }
