@@ -1,0 +1,53 @@
+- type: jukebox
+  id: CybersWorld
+  name: insaneintherain - A Cyber's World
+  path:
+    path: /Audio/_OpenSpace/TEMP_FOR_EVENTS/ESphagnum/Jukebox/1_a_cybers_world_from_deltarune_chapter_2_band_cover.ogg
+
+- type: jukebox
+  id: Bee
+  name: GroovyDominoes52 - Bee.
+  path:
+    path: /Audio/_OpenSpace/TEMP_FOR_EVENTS/ESphagnum/Jukebox/2_bee.ogg
+
+- type: jukebox
+  id: Lease
+  name: makruzyy - LEASE
+  path:
+    path: /Audio/_OpenSpace/TEMP_FOR_EVENTS/ESphagnum/Jukebox/3_lease.ogg
+
+- type: jukebox
+  id: Still_Alive
+  name: makruzyy - Still Alive
+  path:
+    path: /Audio/_OpenSpace/TEMP_FOR_EVENTS/ESphagnum/Jukebox/4_still_alive.ogg
+
+- type: jukebox
+  id: Battle_For_Brains
+  name: ImRuscelOfficial - Battle For Brains
+  path:
+    path: /Audio/_OpenSpace/TEMP_FOR_EVENTS/ESphagnum/Jukebox/5_battle_for_brains_ultimate_battle_brainac_maniac.ogg
+
+- type: jukebox
+  id: Rigor_Mormist
+  name: ImRuscelOfficial - Rigor Mormist
+  path:
+    path: /Audio/_OpenSpace/TEMP_FOR_EVENTS/ESphagnum/Jukebox/6_rigor_mormist.ogg
+
+- type: jukebox
+  id: Erzeben_Strasse
+  name: Antti Lötjönen - Erzeben Strasse
+  path:
+    path: /Audio/_OpenSpace/TEMP_FOR_EVENTS/ESphagnum/Jukebox/7_erzeben_strasse.ogg
+
+- type: jukebox
+  id: Pizza_Deluxe
+  name: Post Elvis - Pizza Deluxe
+  path:
+    path: /Audio/_OpenSpace/TEMP_FOR_EVENTS/ESphagnum/Jukebox/8_pizza_deluxe.ogg
+
+- type: jukebox
+  id: Balatro_Theme
+  name: Luke Pickman - Balatro Theme
+  path:
+    path: /Audio/_OpenSpace/TEMP_FOR_EVENTS/ESphagnum/Jukebox/9_balatro_theme.ogg
