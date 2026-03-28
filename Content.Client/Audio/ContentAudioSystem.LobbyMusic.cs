@@ -13,7 +13,6 @@ using Robust.Shared.Player;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 
-
 namespace Content.Client.Audio;
 
 // Part of ContentAudioSystem that is responsible for lobby music playing/stopping and round-end sound-effect.
@@ -129,14 +128,11 @@ public sealed partial class ContentAudioSystem
 // OpenSpace-Edit Start
     private void LobbyMusicCollectionChanged()
     {
-        if (_state.CurrentState is not LobbyState) {
+        if (_state.CurrentState is not LobbyState)
+        {
             EndLobbyMusic();
             return;
         }
-        // if (_configManager.GetCVar(CCVars.LobbyMusicEnabled))
-        // {
-        //     StartLobbyMusic();
-        // }
     }
 // OpenSpace-Edit Stop
 

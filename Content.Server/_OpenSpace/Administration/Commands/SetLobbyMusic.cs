@@ -21,7 +21,7 @@ public sealed class SetLobbyMusicCommand : EntitySystem, IConsoleCommand
     public new string Description => Loc.GetString("set-lobby-music-command-description");
     public string Help => Loc.GetString("set-lobby-music-command-help");
 
-    private static bool _alreadyUsed;
+    private bool _alreadyUsed;
 
     public override void Initialize()
     {
