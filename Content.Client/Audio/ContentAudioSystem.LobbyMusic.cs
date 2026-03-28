@@ -133,6 +133,10 @@ public sealed partial class ContentAudioSystem
             EndLobbyMusic();
             return;
         }
+        if (_configManager.GetCVar(CCVars.LobbyMusicEnabled))
+        {
+            StartLobbyMusic();
+        }
     }
 // OpenSpace-Edit Stop
 

@@ -15,7 +15,6 @@ namespace Content.Server.Administration.Commands;
 public sealed class SetLobbyMusicCommand : EntitySystem, IConsoleCommand
 {
     [Dependency] private readonly IConfigurationManager _cfg = default!;
-    [Dependency] private readonly IPrototypeManager _proto = default!;
 
     public string Command => "setlobbymusic";
     public new string Description => Loc.GetString("set-lobby-music-command-description");
@@ -49,13 +48,6 @@ public sealed class SetLobbyMusicCommand : EntitySystem, IConsoleCommand
         }
 
         var newCollection = args[0];
-
-        if (!_proto.HasIndex<SoundCollectionPrototype>(newCollection)) // Проверка на существования коллекции
-        {
-            shell.WriteError(Loc.GetString("set-lobby-music-command-not-found", ("collection", newCollection)));
-            return;
-        }
-
         var current = _cfg.GetCVar(CCVars.LobbyMusicCollection);
 
         if (current == newCollection) // Проверка на индетичность
