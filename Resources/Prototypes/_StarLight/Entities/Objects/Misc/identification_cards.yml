@@ -11,18 +11,18 @@
     - type: PresetIdCard
       job: Magistrate
 
-- type: entity
-  parent: IDCardStandard
-  id: BrigmedicIDCard
-  name: brigmedic ID card
-  components:
-    - type: Sprite
-      layers:
-        - state: default
-        - state: idbrigmedic
-    - type: PresetIdCard
-      job: Brigmedic
-      
+# - type: entity
+#   parent: IDCardStandard
+#   id: BrigmedicIDCard
+#   name: brigmedic ID card
+#   components:
+#     - type: Sprite
+#       layers:
+#         - state: default
+#         - state: idbrigmedic
+#     - type: PresetIdCard
+#       job: Brigmedic
+
 - type: entity
   parent: IDCardStandard
   id: RoboticistIDCard
@@ -34,7 +34,7 @@
     - state: idroboticist
   - type: PresetIdCard
     job: Roboticist
-    
+
 - type: entity
   parent: IDCardStandard
   id: NanoTrasenRepresentativeIDCard
@@ -45,7 +45,7 @@
     - state: ert_commander
   - type: PresetIdCard
     job: NanoTrasenRepresentative
-    
+
 - type: entity
   parent: IDCardStandard
   id: IAAIDCard

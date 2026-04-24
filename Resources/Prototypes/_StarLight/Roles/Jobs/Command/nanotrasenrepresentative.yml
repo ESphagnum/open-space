@@ -54,4 +54,4 @@
   storage:
     back:
     - RubberStampNtrep
-    - CaneNT
+    - OffsetCaneNT
