@@ -1,5 +1,5 @@
 - type: entity
-  parent: [UnsensoredClothingUniformBase, BaseSovietContraband]
+  parent: [UnsensoredClothingUniformBase]
   id: ClothingUniformJumpsuitSoviet
   name: old war uniform
   description: Relics of war, many of which have laid the foundation of the USSP. Wearing this may cause unsolicited war stories.
@@ -10,7 +10,7 @@
     sprite: _Starlight/Clothing/Uniforms/Jumpsuit/soviet.rsi
 
 - type: entity
-  parent: [ UnsensoredClothingUniformBase, BaseMajorContraband ]
+  parent: [ UnsensoredClothingUniformBase ]
   id: ClothingUniformJumpsuitAbductor
   name: abductor uniform
   components:
@@ -445,7 +445,7 @@
 
 # USSP
 - type: entity
-  parent: [ UnsensoredClothingUniformBase, BaseSovietContraband ]
+  parent: [ UnsensoredClothingUniformBase ]
   id: ClothingUniformJumpsuitSovietAdmiral
   name: soviet admiral jumpsuit
   description: They are one phone call away from ruining your life.
@@ -467,7 +467,7 @@
     sprite: _Starlight/Clothing/Uniforms/Jumpsuit/track_suit.rsi
 
 - type: entity
-  parent: [ UnsensoredClothingUniformBase, BaseSovietContraband ]
+  parent: [ UnsensoredClothingUniformBase ]
   id: ClothingUniformJumpsuitSovietFatigues
   name: SSF marine combat fatigues
   description: Not one step back.
@@ -482,7 +482,7 @@
   id: ClothingAltUniformJumpsuitCentcomOfficial
   name: CentComm officer's jumpsuit
   description: It's a jumpsuit worn by CentComm officers.
-  components: 
+  components:
   - type: Sprite
     sprite: _Starlight/Clothing/Uniforms/Jumpsuit/centcom_official.rsi
   - type: Clothing
@@ -503,7 +503,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitRisk
   name: station daredevil's  jumpsuit
-  description: A jumpsuit with red lines along the sides. 
+  description: A jumpsuit with red lines along the sides.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Uniforms/Jumpsuit/riskjumpsuit.rsi
@@ -520,7 +520,7 @@
     sprite: _Starlight/Clothing/Uniforms/Jumpsuit/senior_paramedic.rsi
   - type: Clothing
     sprite: _Starlight/Clothing/Uniforms/Jumpsuit/senior_paramedic.rsi
-    
+
 - type: entity
   parent: [ ClothingUniformBase , BaseSalvageContraband ]
   id: ClothingUniformJumpsuitSalvageMercWhite
