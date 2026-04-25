@@ -56,3 +56,11 @@
     - Flash
     pocket2:
     - Handcuffs
+
+
+- type: chameleonOutfit
+  id: BlueShieldChameleonOutfit
+  job: BlueShield
+  equipment:
+    head: ClothingHeadHatBeretBlueShield
+    gloves: ClothingHandsGlovesCombat
