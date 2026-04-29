@@ -1,8 +1,8 @@
-using Content.Goobstation.Common.CCVar;
+using Content.Shared._GoobStation.CCVar;
 using Content.Server.Popups;
 using Content.Server.Station.Components;
-using Content.Goobstation.Server.MobCaller;
-using Content.Shared.Humanoid;
+using Content.Server._GoobStation.MobCaller;
+using Content.Server.Humanoid;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Popups;
@@ -12,7 +12,7 @@ using Robust.Shared.Configuration;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Timing;
 
-namespace Content.Goobstation.Server.SpaceWhale.StationProximity;
+namespace Content.Server._GoobStation.SpaceWhale.StationProximity;
 
 // used by space whales so think twice beofre using it for yourself somewhere else
 // also half of this was taken from wizden #30436 and redone for whale purposes
@@ -61,7 +61,7 @@ public sealed class StationProximitySystem : EntitySystem
         if (stations.Count == 0)
             return;
 
-        var humanoidQuery = EntityQueryEnumerator<HumanoidAppearanceComponent, MobStateComponent, TransformComponent>();
+        var humanoidQuery = EntityQueryEnumerator<HumanoidComponent, MobStateComponent, TransformComponent>();
         while (humanoidQuery.MoveNext(out var uid, out _, out var mobState, out var humanoidXform))
         {
             if (mobState.CurrentState != MobState.Alive)

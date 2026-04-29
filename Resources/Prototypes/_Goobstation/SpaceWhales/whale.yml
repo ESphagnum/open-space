@@ -13,10 +13,10 @@
   - type: MovementSpeedModifier
     baseSprintSpeed: 11
     baseWalkSpeed: 11
-  - type: RadarBlip
-    scale: 3
-    shape: hexagon
-    visibleFromOtherGrids: true
+  # - type: RadarBlip
+  #   scale: 3
+  #   shape: hexagon
+  #   visibleFromOtherGrids: true
   - type: MovementIgnoreGravity
     gravityState: true # wtf lol?
   - type: WarpPoint
@@ -101,10 +101,10 @@
   parent: FlyingMobBase
   suffix: do not spawn
   components:
-  - type: RadarBlip
-    scale: 2
-    shape: diamond
-    visibleFromOtherGrids: true
+  # - type: RadarBlip
+  #   scale: 2
+  #   shape: diamond
+  #   visibleFromOtherGrids: true
   - type: Sprite
     sprite: _Goobstation/Mobs/SpaceWhale/leviathan.rsi
     state: segment

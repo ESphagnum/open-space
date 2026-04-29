@@ -1,4 +1,4 @@
-namespace Content.Goobstation.Server.SpaceWhale;
+namespace Content.Server._GoobStation.SpaceWhale;
 
 /// <summary>
 /// Marks an entity for a space whale target.

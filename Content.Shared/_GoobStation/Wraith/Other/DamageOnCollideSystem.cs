@@ -1,9 +1,10 @@
 using Content.Shared.Damage;
 using Content.Shared.Tag;
 using Content.Shared.Whitelist;
+using Content.Shared.Damage.Systems;
 using Robust.Shared.Physics.Events;
 
-namespace Content.Goobstation.Shared.Wraith.Other;
+namespace Content.Shared._GoobStation.Wraith.Other;
 
 public sealed class DamageOnCollideSystem : EntitySystem
 {

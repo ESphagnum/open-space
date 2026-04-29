@@ -50,7 +50,7 @@
 
 using Robust.Shared.Configuration;
 
-namespace Content.Goobstation.Common.CCVar;
+namespace Content.Shared._GoobStation.CCVar;
 
 [CVarDefs]
 public sealed partial class GoobCVars
